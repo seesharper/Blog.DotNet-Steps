@@ -1,6 +1,10 @@
 
 
-I have been using C# scripting as a tool for writing build scripts for many years now. At first it was [ScriptCs](http://scriptcs.net/) using [Sublime Text](https://www.sublimetext.com/) as the editor. There was no intellisense or debugging capabilities, but still it was insanely powerful to have all the sweetness of C# available in a simple script file. 
+# Reflection in C# scripts
+
+
+
+I have been using C# scripting as a tool for writing build scripts for many years now. At first it was [ScriptCs](http://scriptcs.net/) using [Sublime Text](https://www.sublimetext.com/) as the editor. There was no intellisense or debugging capabilities, but still it was insanely powerful to have all the sweetness of C# available in a simple script file. In addition to using C# scripts in a variety of ways, I am also responsible for a handful of pull requests over at the [dotnet-script](https://github.com/filipw/dotnet-script) repo. Together,  [Filip](https://github.com/filipw), my self and several other contributors  have created a C# script runner that runs on .Net Core with support for inline NuGet packages, debugging and much more. You should check it out 😀
 
 This post is not really about the evolution of C# scripting, but rather about how I went about creating [dotnet-steps](https://github.com/seesharper/dotnet-steps) which is a super simple way of composing "steps" in a C# script. 
 
@@ -258,15 +262,9 @@ private static void PopCallStackAndUpdateDurations(StepResult stepresult, Stopwa
 
 
 
+### Summary
+
+The goal of this post was mainly to show how to do reflection in C# scripts and the technique I've shown here can of course be used in a number of interesting ways. Check out the documentation over at the [dotnet-steps](https://github.com/seesharper/dotnet-steps/tree/master/src) for more details. If you have any questions or ideas how to improve, don't hesitate to contact me. 
 
 
-
-
- 
-
-* Reflection
-* CallStack
-* Decorating fields
-* Testing 
-* Script packag
 
